@@ -1,0 +1,273 @@
+{
+  "entities": {
+    "Ff96e329b_475": {
+      "reference_plane": {},
+      "type": "Sketch",
+      "name": "Sketch 475",
+      "profiles": {
+        "JGH": {
+          "loops": [
+            {
+              "profile_curves": [
+                {
+                  "center_point": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  },
+                  "radius": 0.007875,
+                  "type": "Circle3D",
+                  "curve": "JGI",
+                  "normal": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 1
+                  }
+                }
+              ],
+              "is_outer": true
+            }
+          ],
+          "properties": {}
+        }
+      },
+      "transform": {
+        "origin": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "y_axis": {
+          "x": 0.0,
+          "y": 1.0,
+          "z": 0.0
+        },
+        "x_axis": {
+          "x": 1.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "z_axis": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.0
+        }
+      }
+    },
+    "F5181514c_476": {
+      "reference_plane": {},
+      "type": "Sketch",
+      "name": "Sketch 476",
+      "profiles": {
+        "JGI": {
+          "loops": [
+            {
+              "profile_curves": [
+                {
+                  "center_point": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  },
+                  "radius": 0.006875,
+                  "type": "Circle3D",
+                  "curve": "JGJ",
+                  "normal": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 1
+                  }
+                }
+              ],
+              "is_outer": true
+            }
+          ],
+          "properties": {}
+        }
+      },
+      "transform": {
+        "origin": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "y_axis": {
+          "x": 0.0,
+          "y": 1.0,
+          "z": 0.0
+        },
+        "x_axis": {
+          "x": 1.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "z_axis": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.0
+        }
+      }
+    },
+    "Fbe00a6fe_477": {
+      "extent_two": {
+        "distance": {
+          "role": "AgainstDistance",
+          "type": "ModelParameter",
+          "name": "none",
+          "value": 0.0
+        },
+        "type": "DistanceExtentDefinition",
+        "taper_angle": {
+          "role": "Side2TaperAngle",
+          "type": "ModelParameter",
+          "name": "none",
+          "value": 0.0
+        }
+      },
+      "name": "Extrude 477",
+      "extent_one": {
+        "distance": {
+          "role": "AlongDistance",
+          "type": "ModelParameter",
+          "name": "none",
+          "value": 0.0022
+        },
+        "type": "DistanceExtentDefinition",
+        "taper_angle": {
+          "role": "TaperAngle",
+          "type": "ModelParameter",
+          "name": "none",
+          "value": 0.0
+        }
+      },
+      "extent_type": "OneSideFeatureExtentType",
+      "operation": "NewBodyFeatureOperation",
+      "start_extent": {
+        "type": "ProfilePlaneStartDefinition"
+      },
+      "type": "ExtrudeFeature",
+      "profiles": [
+        {
+          "profile": "JGH",
+          "sketch": "Ff96e329b_475"
+        }
+      ]
+    },
+    "Feec50c0c_478": {
+      "extent_two": {
+        "distance": {
+          "role": "AgainstDistance",
+          "type": "ModelParameter",
+          "name": "none",
+          "value": 0.0
+        },
+        "type": "DistanceExtentDefinition",
+        "taper_angle": {
+          "role": "Side2TaperAngle",
+          "type": "ModelParameter",
+          "name": "none",
+          "value": 0.0
+        }
+      },
+      "name": "Extrude 478",
+      "extent_one": {
+        "distance": {
+          "role": "AlongDistance",
+          "type": "ModelParameter",
+          "name": "none",
+          "value": 0.0128
+        },
+        "type": "DistanceExtentDefinition",
+        "taper_angle": {
+          "role": "TaperAngle",
+          "type": "ModelParameter",
+          "name": "none",
+          "value": 0.0
+        }
+      },
+      "extent_type": "OneSideFeatureExtentType",
+      "operation": "JoinFeatureOperation",
+      "start_extent": {
+        "type": "ProfilePlaneStartDefinition"
+      },
+      "type": "ExtrudeFeature",
+      "profiles": [
+        {
+          "profile": "JGI",
+          "sketch": "F5181514c_476"
+        }
+      ]
+    },
+    "F9bf71063_479": {
+      "type": "FilletFeature",
+      "name": "Fillet 479",
+      "radius": {
+        "type": "ModelParameter",
+        "name": "none",
+        "value": 0.001
+      },
+      "edges": [
+        "edge_4"
+      ]
+    },
+    "F58048190_480": {
+      "type": "ChamferFeature",
+      "name": "Chamfer 480",
+      "distance": {
+        "type": "ModelParameter",
+        "name": "none",
+        "value": 0.0015
+      },
+      "edges": [
+        "edge_1"
+      ]
+    }
+  },
+  "properties": {
+    "bounding_box": {
+      "max_point": {
+        "x": 0.007875,
+        "y": 0.007875,
+        "z": 0.01575
+      },
+      "type": "BoundingBox3D",
+      "min_point": {
+        "x": -0.007875,
+        "y": -0.007875,
+        "z": 0.0
+      }
+    }
+  },
+  "sequence": [
+    {
+      "index": 0,
+      "type": "Sketch",
+      "entity": "Ff96e329b_475"
+    },
+    {
+      "index": 1,
+      "type": "Sketch",
+      "entity": "F5181514c_476"
+    },
+    {
+      "index": 2,
+      "type": "ExtrudeFeature",
+      "entity": "Fbe00a6fe_477"
+    },
+    {
+      "index": 3,
+      "type": "ExtrudeFeature",
+      "entity": "Feec50c0c_478"
+    },
+    {
+      "index": 4,
+      "type": "FilletFeature",
+      "entity": "F9bf71063_479"
+    },
+    {
+      "index": 5,
+      "type": "ChamferFeature",
+      "entity": "F58048190_480"
+    }
+  ]
+}
